@@ -1,0 +1,133 @@
+.navigation {
+    font-family: var(--font-1);
+    /* background-color: rgb(239, 120, 120); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    font-size: 40px;
+    display: flex;
+}
+
+.nav-left ul {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+    font-size: 14px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    margin: 0 14px;
+    font-family: var(--font-2);
+}
+
+.nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 6px;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-left ul li a:hover {
+    color: black;
+    background-color: rgb(102 224 255);
+    font-weight: bolder;
+}
+
+.content {
+    height: 100%;
+    display: flex;
+    margin-top: 1.2rem;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.content::before{
+    content: "";
+    background: url(pic.jpg);
+    border-radius: 20px;
+    height: inherit;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.content-left{
+    font-family: var(--font-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.3rem;
+    width: 60%;
+    z-index: 1;
+}
+
+.content-right{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-right img{
+    width: 17.6rem;
+    height: 17.6rem;
+    border: 3.5px solid black;
+    border-radius: 30px;
+}
+
+.home-articles{
+    /* height: 500px; */
+    margin-top: 20px;
+    height: auto;
+    background-color: rgb(102 224 255 / 20%);
+    padding-top: 12px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.home-article{
+    display: flex;
+    align-self: center;
+    margin: 40px;
+}
+
+.article-content{
+    align-self: center;
+    padding: 0px 40px;
+}
+
+.home-article img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 23px;
+}
+
+.article-content a{
+    text-decoration: none;
+    color: black;
+}
+
+.article-content a :hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.footer {
+    height: 30px;
+    background-color: #4d4b4b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
